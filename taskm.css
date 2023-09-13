@@ -1,0 +1,256 @@
+body {
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(0, 0, 0); */
+    background-image: url(download36.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    /* max-width: 500px; */
+    width: 50%;
+    /* margin: 10px; */
+    padding: 30px;
+    /* box-shadow: #626262 7px 7px 5px 7px; */
+    /* background-image: linear-gradient(to bottom, rgb(223, 249, 255) ,rgb(211, 246, 255) ,rgb(119, 225, 252),rgb(0, 204, 255)); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    background-color: #ccf1fb36;
+
+    border-radius: 10px;
+    margin-top: 3%;
+    margin-left: 20%;
+}
+
+/* .container h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #333;
+    font-family: tangerine;
+  } */
+
+.controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+    /* width: 100%; */
+}
+
+.controls input[type="text"],
+.controls input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.controls button {
+    background-color: #b2f3ff;
+    color: rgb(0, 0, 0);
+    /* border: 2px solid rgb(245, 245, 245); */
+    padding: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 180px;
+    border: 2px solid black;
+}
+
+#addTaskBtn:hover {
+    background-color: #181836;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#sortTasksBtn:hover {
+    background-color: #181836;
+    color: white;
+    transition: 0.3s ease;
+}
+
+/* .button :hover {
+    color: white;
+    background-color: #540000;
+
+  } */
+
+.search input[type="text"] {
+    padding: 8px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul {
+    /* display: flex; */
+    /* align-items: center; */
+    list-style: none;
+    width: 50%;
+    background-color: #ccf1fb36;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    /* box-shadow: #838383 7px 7px 5px 5px; */
+    margin-top: 3%;
+    margin-left: 20%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0px 6px 8px rgba(255, 255, 255, 0.3);
+    position: relative;
+
+}
+
+li .complete {
+    text-decoration: line-through;
+    color: #434343;
+    /* background-color: #9a9a9a; */
+}
+
+.complete {
+    background-color: #cacaca;
+}
+
+li button {
+    cursor: pointer;
+    border: none;
+
+}
+
+.completebtn {
+    background-color: #b2f3ff;
+    border: none;
+    transition: 0.5s;
+    transform: scale(1.05);
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid rgb(4, 0, 57);
+}
+
+.completebtn:hover {
+    background-color: #0094ae8a;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.completed {
+    background-color: #d0d0d0;
+    transition: background-color 0.5s ease;
+}
+
+
+.deletebtn {
+    background-color: #fbfbfb00;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    top: 17px;
+    right: 12rem;
+}
+
+@keyframes scaleDown {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.scale-down {
+    animation: scaleDown 0.9s ease;
+}
+
+.editbtn {
+    background-color: #00000000;
+    position: absolute;
+    top: 17px;
+    right: 16rem;
+}
+
+.due-date {
+    position: absolute;
+    top: 15px;
+    left: 14rem;
+}
+
+.categoryy {
+    position: absolute;
+    top: 15px;
+    left: 22.5rem;
+}
+
+@keyframes popAnimation {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.pop {
+    animation: popAnimation 1s cubic-bezier(0.36, 0.07, 0.19, 0.50) forwards;
+}
+
+
+
+h1 {
+    color: rgb(204, 246, 251);
+    font-family: Dancing Script;
+    font-size: 40px;
+    margin: 0;
+    padding-left: 23%;
+}
+
+h4 {
+    color: white;
+    margin-bottom: 3px;
+}
+
+.category {
+    font-size: 14px;
+    padding: 6px;
+    border: none;
+    border-radius: 4.5px;
+}
+
+label {
+    font-size: 15px;
+}
+
+.select {
+    color: white;
+}
+
+
+.clock {
+    font-family: Dancing Script;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
